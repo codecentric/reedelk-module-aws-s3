@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.reedelk</groupId>
+        <artifactId>module-parent</artifactId>
+        <version>1.0.6</version>
+    </parent>
+
+    <version>1.0.6</version>
+    <artifactId>module-aws-s3</artifactId>
+
+    <packaging>bundle</packaging>
+
+    <properties>
+        <aws.s3.version>1.11.852</aws.s3.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>${aws.s3.version}</version>
+        </dependency>
+    </dependencies>
+</project>
